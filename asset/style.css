@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.header {
+    background-color: rgb(135, 143, 143);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 85px;
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    gap: 16px;
+    padding: 6px;
+}
+
+.navbar-logo {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+#toggle-menu {
+    display: none;
+}
+
+.bars-menu {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.title {
+    align-items: center;
+    text-align: center;
+}
+
+.bars-menu i {
+    height: 10px;
+    width: 24px;
+    background-color: rgb(230, 195, 195);
+}
+
+.nav-items {
+    display: flex;
+    list-style: none;
+    font-size: larger;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}
+
+li {
+    text-decoration: none;
+
+    &:hover {
+        color: aquamarine;
+        cursor: pointer;
+    }
+
+    ;
+}
+
+.banner {
+    background-image: url('/asset/paqueteria2.jpg');
+    height: 45rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.content-banner {
+    max-width: 150rem;
+    margin: 0 auto;
+    padding: 10rem 0;
+}
+
+.content-banner h3 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: gray;
+}
+
+.content-banner h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: gray;
+}
+
+.main-content {
+    background-color: rgb(212, 203, 203);
+}
+
+.container-features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    height: 150px;
+}
+
+.card-feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.card-feature i {
+    font-size: 2.7rem;
+    color: brown;
+}
+
+.container-categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.card-category {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    gap: 2rem;
+}
+
+.category-moca {
+    background-image: linear-gradient(#43383880, #12111180),
+        url('/asset/paqueteria.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.category-expreso {
+    background-image: linear-gradient(#00000080, #00000080), url(/asset/paqueteria3.webp);
+    background-size: cover;
+}
+
+.category-expreso2 {
+    background-image: linear-gradient(#00000080, #00000080),
+        url('/asset/paqueteria4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-category p {
+    font-size: 1.5rem;
+    color: white;
+    position: relative;
+
+}

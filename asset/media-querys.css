@@ -1,0 +1,62 @@
+@media (min-width: 375px) and (max-width: 768px) {
+    .navbar {
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        gap: 8px;
+    }
+
+    .title {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-right: 120px;
+    }
+
+    .navbar-logo {
+        margin-right: 150px;
+    }
+
+    #toogle-menu {
+        display: none;
+    }
+
+    .navbar .nav-items {
+        flex-direction: column;
+        position: absolute;
+        z-index: 10;
+        top: 24px;
+        background-color: rgb(190, 177, 177);
+        right: 0.5%;
+        width: 100%;
+        display: none;
+
+        li {
+            height: 18px;
+        }
+
+        &:hover {
+            color: aquamarine
+        }
+    }
+
+
+
+    .bars-menu .bx-menu {
+        display: block;
+        font-size: 3rem;
+        background: rgb(36, 24, 24);
+    }
+
+    #toggle-menu:checked~.nav-items {
+        display: flex;
+    }
+
+    .container-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-feature {
+        flex-direction: column;
+    }
+}
